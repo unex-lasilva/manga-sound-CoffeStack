@@ -10,3 +10,16 @@ Um par de fone de ouvido, a sua lista de reprodução favorita e pronto: você e
 # Equipe: <nome-da-equipe>
 1. <Nome de fulano>
 2. <Nome de fulana>
+
+
+
+
+# Avaliação das PRs:
+
+| Avaliador      |  Carlos  | Gustavo  |   João   | Leonardo | Moisés   |
+|----------------|----------|----------|----------|----------|----------|
+|Carlos Henrique |    *     |   0      |  0       |  0       | 0        |
+|Gustavo Bezerra |    0     |   *      |  0       |  0       | 0        |
+|João Guilherme  |    0     |   0      |  *       |  0       | 0        |
+|Leonardo Freitas|    0     |   0      |  0       |  *       | 0        |
+|Moisés de Souza |    0     |   0      |  0       |  0       | *        |
