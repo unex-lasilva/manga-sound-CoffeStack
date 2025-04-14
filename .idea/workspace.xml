@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0cd96723-c1e1-46cd-b90b-c7a2f9e92865" name="Changes" comment="" />
+    <list default="true" id="0cd96723-c1e1-46cd-b90b-c7a2f9e92865" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manga-sound-player/src/main/java/br/com/mangarosa/collections/ListaEncadeada.java" beforeDir="false" afterPath="$PROJECT_DIR$/manga-sound-player/src/main/java/br/com/mangarosa/collections/ListaEncadeada.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,10 +24,25 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;CaosH360&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/unex-lasilva/manga-sound-CoffeStack.git&quot;,
+    &quot;accountId&quot;: &quot;2f9594a7-4355-4e58-8bc5-806c88957d88&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
   <component name="ProjectId" id="2uYUOaNaqfSjG2oz2QySYNBrJKE" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -34,8 +52,10 @@
     "JUnit.ListaEncadeadaTest.executor": "Run",
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "CarlosH-branch",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Rigas/arquivos/unex/Semestre_3°/Estrutura de Dados/Repo/manga-sound-CoffeStack",
     "onboarding.tips.debug.path": "/Users/lasilva/Documents/UNEX/GitHub-Templates/manga-sound-template/manga-sound/test/src/Main.java",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
@@ -53,7 +73,7 @@
       <module name="manga-sound-player" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="br.com.mangarosa.collections.*" />
+          <option name="PATTERN" value="br.com.mangarosa.player.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>

@@ -5,7 +5,7 @@ package br.com.mangarosa.collections;
  * Ela permite adicionar, remover e acessar elementos de maneira eficiente. Esta lista pode armazenar
  * qualquer tipo de objeto e oferece funcionalidades típicas de listas, como adicionar ao final,
  * inserir em posições específicas, remover elementos, verificar a presença de elementos e mais.
- *
+ *ngmv
  * <p>Os principais métodos incluem:</p>
  * <ul>
  *   <li>{@link #append(Object)} - Adiciona um elemento ao final da lista.</li>
