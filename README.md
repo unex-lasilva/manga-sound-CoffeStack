@@ -8,12 +8,13 @@ Um par de fone de ouvido, a sua lista de reprodução favorita e pronto: você e
 
 
 # Equipe: <nome-da-equipe>
-1. <Nome de fulano>
-2. <Nome de fulana>
 
-
-
-
+1. *Carlos Henrique de Souza Santana Santiago* - *carloshsssantiago@gmail.com*
+2. *Gustavo Bezerra Nonato* - *gustavaobezerra@gmail.com*
+3. *João Guilherme Gonçalves Pinheiro* - *jgpinheiro30@gmail.com*
+4. *Leonardo Freitas de Carvalho Nery* - *leoneryfreitas@gmail.com*
+5. *Moisés de Souza Oliveira* - *Moisessouza0204@gmail.com*
+  
 # Avaliação das PRs:
 
 | Avaliador      |  Carlos  | Gustavo  |   João   | Leonardo | Moisés   |
