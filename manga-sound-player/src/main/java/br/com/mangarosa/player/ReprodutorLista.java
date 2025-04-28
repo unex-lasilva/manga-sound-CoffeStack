@@ -1,5 +1,8 @@
 package br.com.mangarosa.player;
 
+import br.com.mangarosa.collections.Musica;
+import br.com.mangarosa.collections.ListaReproducao;
+
 import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.AudioInputStream;
 import javax.sound.sampled.Clip;
@@ -24,7 +27,7 @@ public class ReprodutorLista {
 
         try {
             AudioInputStream audioStream = AudioSystem.getAudioInputStream(
-                    new File(listaReproducao.getMusicaAtual().getCaminhoArquivo()));
+                    new File(listaReproducao.obterMusica(indiceMusicaAtual).getPath()));
             this.clip = AudioSystem.getClip();
             this.clip.open(audioStream);
         } catch (Exception e) {
@@ -46,7 +49,7 @@ public class ReprodutorLista {
         this.indiceMusicaAtual = 0;
         this.status = "parado";
 
-        System.out.println("Lista de reprodução carregada: " + lista.getNome());
+        System.out.println("Lista de reprodução carregada: " + lista.getTitulo());
     }
 
     public void executar() {
@@ -62,15 +65,15 @@ public class ReprodutorLista {
         }
 
         // Obtem a música atual da lista
-        Musica musica = listaReproducao.getMusicaAtual(indiceMusicaAtual);
-        if (musica == null || musica.getCaminhoArquivo() == null || musica.getCaminhoArquivo().isEmpty()) {
+        Musica musica = listaReproducao.obterMusica(indiceMusicaAtual);
+        if (musica == null || musica.getPath() == null || musica.getPath().isEmpty()) {
             System.out.println("Caminho da música inválido");
             return;
         }
 
         // Tenta abrir o arquivo .wav e tocar
         try {
-            File arquivo = new File(musica.getCaminhoArquivo());
+            File arquivo = new File(musica.getPath());
             AudioInputStream audioStream = AudioSystem.getAudioInputStream(arquivo);
 
             // Fecha o clip anterior se ainda estiver aberto
@@ -148,6 +151,16 @@ public class ReprodutorLista {
     }
 
         public void voltar() {
+            if (clip != null && clip.isRunning()) {
+                long posicaoAtual = clip.getMicrosecondLength();
+
+                if (posicaoAtual > 10_000_000) {
+                    reiniciarMusica();
+                    System.out.println("A música foi reiniciada.");
+                    return;
+                }
+            }
+
             if(listaReproducao != null && !listaReproducao.isVazia()) {
                 if (indiceMusicaAtual > 0) {
                 indiceMusicaAtual--;
