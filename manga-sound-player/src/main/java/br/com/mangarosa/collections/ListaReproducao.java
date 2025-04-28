@@ -1,48 +1,48 @@
 package br.com.mangarosa.collections;
 
 public class ListaReproducao {
-    private ListaEncadeada<Musica> lista;
+    private ListaEncadeada lista;
     private String titulo;
 
-    public ListaReproducao() {
-        this.lista = new ListaEncadeada<>();
+    public ListaReproducao(String titulo) {
+        this.lista = new ListaEncadeada();
         this.titulo = "";
     }
 
     public void addMusica(Musica musica) {
-        lista.adicionar(musica);
+        lista.append(musica);
     }
 
     public void removerMusica(int posicao) {
-        lista.remover(posicao);
+        lista.remove(posicao);
     }
 
     public void inserirMusica(int posicao, Musica musica) {
-        lista.inserir(posicao , musica);
+        lista.insertAt(posicao , musica);
     }
 
     public boolean isVazia() {
-        return lista.estaVazia();
+        return lista.isEmpty();
     }
 
     public int tamanho() {
-        return lista.getTamanho();
+        return lista.size();
     }
 
     public int posicaoDaMusica(Musica musica) {
-        return lista.indiceDe(musica);
+        return lista.indexOf(musica);
     }
 
     public boolean conterMusica(Musica musica) {
-        return lista.obter(posicao);
+        return lista.contains(musica);
     }
 
     public Musica obterMusica(int posicao) {
-        return lista.obter(posicao);
+        return lista.get(posicao);
     }
 
     public void limparLista() {
-        lista.limpar();
+        lista.clear();
     }
 
     public String getTitulo() {
@@ -54,7 +54,7 @@ public class ListaReproducao {
     }
 
     public void criarListaAPartirDe(ListaReproducao outraLista) {
-        this.lista = new ListaEncadeada<>();
+        this.lista = new ListaEncadeada();
         for (int i = 0; i < outraLista.tamanho(); i++) {
             Musica musica = outraLista.obterMusica(i);
             this.addMusica(musica);
