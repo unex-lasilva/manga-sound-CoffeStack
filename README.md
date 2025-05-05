@@ -19,8 +19,8 @@ Um par de fone de ouvido, a sua lista de reprodução favorita e pronto: você e
 
 | Avaliador      |  Carlos  | Gustavo  |   João   | Leonardo | Moisés   |
 |----------------|----------|----------|----------|----------|----------|
-|Carlos Henrique |    *     |   0      |  0       |  0       | 0        |
-|Gustavo Bezerra |    0     |   *      |  0       |  0       | 0        |
-|João Guilherme  |    0     |   0      |  *       |  0       | 0        |
-|Leonardo Freitas|    0     |   0      |  0       |  *       | 0        |
-|Moisés de Souza |    0     |   0      |  0       |  0       | *        |
+|Carlos Henrique |    *     |   9.5    |  10      |  10      | 9        |
+|Gustavo Bezerra |    10    |   *      |  10      |  10      | 10       |
+|João Guilherme  |    10    |   10     |  *       |  10      | 10       |
+|Leonardo Freitas|    10    |   10     |  9       |  *       | 9        |
+|Moisés de Souza |    10    |   10     |  10      |  10      | *        |
